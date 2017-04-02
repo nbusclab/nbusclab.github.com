@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on A Hugo website</title>
+    <link>/categories/r/index.xml</link>
+    <description>Recent content in R on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Blogdown中文测试</title>
+      <link>/2017/04/01/blogdown/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/04/01/blogdown/</guid>
+      <description>&lt;p&gt;它需要下载一个主题和一些内容的案例，由于又是从github下载文件，所以网络又坑了我一把，所以建议还是要翻墙的。 下载好后就可以看到一个初始的页面生成了。基本上跟我这个页面样子是一样的。 在文件夹生成了一些文件，其实也可以不了解：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;config.toml 这个文件特别重要，是整个网站的基本配置文件。&lt;/li&gt;
+&lt;li&gt;content 用来存放md，rmd格式的博文的原文件&lt;/li&gt;
+&lt;li&gt;public 存放的是生成的静态页面&lt;/li&gt;
+&lt;li&gt;themes 顾名思义就是主题文件&lt;/li&gt;
+&lt;li&gt;static 放的是博文内容的一些图片等&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;基础用户体验的话，就改个标题，logo什么的就好了。 之后如果需要生成本地访问服务，就不用在新建了，执行下面就行：
+&lt;strong&gt;blogdown::serve_site()&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/2015/07/23/hello-r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/2015/07/23/hello-r-markdown/</guid>
+      <description>&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;R Markdown&lt;/h1&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &amp;lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Including Plots&lt;/h1&gt;
+&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
+  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
+  init.angle = -50, border = NA
+)&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;../../post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 1: A fancy pie chart.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

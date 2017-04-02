@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogdown on A Hugo website</title>
+    <link>/categories/blogdown/index.xml</link>
+    <description>Recent content in Blogdown on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="/categories/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Blogdown中文测试</title>
+      <link>/2017/04/01/blogdown/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/04/01/blogdown/</guid>
+      <description>&lt;p&gt;它需要下载一个主题和一些内容的案例，由于又是从github下载文件，所以网络又坑了我一把，所以建议还是要翻墙的。 下载好后就可以看到一个初始的页面生成了。基本上跟我这个页面样子是一样的。 在文件夹生成了一些文件，其实也可以不了解：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;config.toml 这个文件特别重要，是整个网站的基本配置文件。&lt;/li&gt;
+&lt;li&gt;content 用来存放md，rmd格式的博文的原文件&lt;/li&gt;
+&lt;li&gt;public 存放的是生成的静态页面&lt;/li&gt;
+&lt;li&gt;themes 顾名思义就是主题文件&lt;/li&gt;
+&lt;li&gt;static 放的是博文内容的一些图片等&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;基础用户体验的话，就改个标题，logo什么的就好了。 之后如果需要生成本地访问服务，就不用在新建了，执行下面就行：
+&lt;strong&gt;blogdown::serve_site()&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

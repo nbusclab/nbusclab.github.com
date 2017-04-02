@@ -1,0 +1,35 @@
+---
+title: "十行代码看到空气质量指数"
+author: "郎大为"
+date: '2017-04-02'
+slug: pm2.5_map
+tags: []
+categories: []
+---
+
+好了, 以下是代码, 分成三个部分:     
+1. 载入包, 并读取网页的数据     
+2. 整理数据并进行命名, 包含了获取其中的城市, AQI以及将其转化为数值   
+3. 使用geojsonMap绘制细分到城市的污染情况   
+这部分代码运行之后会出现一个以高德地图为底图, 可缩放可点击的地图~
+
+```{r}
+library(XML)
+library(leafletCN)
+# 读取网页的表格
+# Sorry for 爬了你家网站
+table = readHTMLTable("http://www.pm25.in/rank",  
+                      encoding = "UTF-8", stringsAsFactors = F)[[1]]
+
+# 整理数据并命名
+dat = table[ , 2:3]
+names(dat) = c("city","AQI")
+dat$AQI = as.numeric(dat$AQI)
+
+# 调用geojsonMap进行绘制
+geojsonMap(dat, "city",
+           popup =  paste0(dat$city, ":", dat$AQI),
+           palette = "Reds", legendTitle = "AQI")
+```
+
+ 
